@@ -6,9 +6,11 @@ for (let j = 0; j < 17; j++) {
 	else if (j === 1) miArreglo.push(1);
 	else miArreglo.push(miArreglo[j - 1] + miArreglo[j - 2]);
 }
-document.write("Numeros entre 0 y 1000 <br>");
-document.write(miArreglo);
+
 document.write("<br><br>");
+document.write("<li><strong>SECUENCIA DE NUMERO FIBONACCI ENTRE 0 Y 1000</strong></li>");
+document.write("<p class=\"card-container--text\">",miArreglo + "</p>");
+document.write("<br>");
 
 /// FIn Fibonacci ///
 
@@ -19,34 +21,26 @@ for (let k = 0; k < miArreglo.length; k++) {
 	if ((miArreglo[k] % 2) == 0) Pares.push(miArreglo[k]);
 	else Impares.push(miArreglo[k]);
 }
-document.write("Numeros pares entre 0 y 1000 <br>");
-document.write(Pares);
-document.write("<br><br>Numeros Impares entre 0 y 1000 <br>");
-document.write(Impares);
+document.write("<li><strong>NUMEROS PARES FIBONACCI ENTRE 0 Y 1000</strong></li>");
+document.write("<p class=\"card-container--text\">",Pares + "</p>");
+//document.write("<br>");
+document.write("<li><strong>NUMEROS IMPARES FIBONACCI ENTRE 0 Y 1000</strong></li>");
+document.write("<p class=\"card-container--text\">",Impares + "</p>");
 /// Fin Pares e Impares de Fibonacci ///
 
 
 
-/// Arreglo todo a Mayusculas ///
+/// ARREGLO EN MINUSCULAS ///
+document.write("<li><strong>ARREGLO DE STRINGS ORIGINAL EN MINUSCULAS</strong></li>");
+let pokeones = ["Pikachu","Charmander","Bulbasaur","Squirtle",]
+document.write("<p class=\"card-container--text\">",pokeones + "</p>")
+/// FIN ARREGLO EN MINUSCULAS ///
 
-document.write("<br><br>");
-document.write("Arreglo  Original todo en minusculas");
 
-let pokeones = [
-	"Pikachu",
-	"Charmander",
-	"Bulbasaur",
-	"Squirtle",
-]
-
-document.write("<br><br>");
-document.write(pokeones)
-document.write("<br><br>");
-document.write("Arreglo Nuevo todo en Mayusculas");
-document.write("<br><br>");
-
+/// ARREGLO EN MAYUSCULAS ///
+document.write("<li><strong>NUEVO ARREGLO DE STRINGS EN MAYUSCULAS</strong></li>");
 let pokeonesMayu = pokeones.map( (user) => {
 	return user.toUpperCase();
 });
-document.write(pokeonesMayu);
-
+document.write("<p class=\"card-container--text\">",pokeonesMayu + "</p>");
+/// FIN ARREGLO EN MAYUSCULAS ///

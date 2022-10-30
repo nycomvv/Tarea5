@@ -23,7 +23,6 @@ for (let k = 0; k < miArreglo.length; k++) {
 }
 document.write("<li><strong>NUMEROS PARES FIBONACCI ENTRE 0 Y 1000</strong></li>");
 document.write("<p class=\"card-container--text\">",Pares + "</p>");
-//document.write("<br>");
 document.write("<li><strong>NUMEROS IMPARES FIBONACCI ENTRE 0 Y 1000</strong></li>");
 document.write("<p class=\"card-container--text\">",Impares + "</p>");
 /// Fin Pares e Impares de Fibonacci ///
@@ -40,8 +39,6 @@ document.write("<p class=\"card-container--text\">",pokeones + "</p>")
 
 /// ARREGLO EN MAYUSCULAS ///
 document.write("<li><strong>NUEVO ARREGLO DE STRINGS EN MAYUSCULAS</strong></li>");
-let pokeonesMayu = pokeones.map( (user) => {
-	return user.toUpperCase();
-});
+let pokeonesMayu = pokeones.map( (user) => { return user.toUpperCase(); });
 document.write("<p class=\"card-container--text\">",pokeonesMayu + "</p>");
 /// FIN ARREGLO EN MAYUSCULAS ///

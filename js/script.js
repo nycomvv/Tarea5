@@ -6,7 +6,7 @@ for (let j = 0; j < 17; j++) {
 	else if (j === 1) miArreglo.push(1);
 	else miArreglo.push(miArreglo[j - 1] + miArreglo[j - 2]);
 }
-
+document.write("<p class=\"card-container--title\"><strong>FIBONACCI</strong>")
 document.write("<br><br>");
 document.write("<li><strong>SECUENCIA DE NUMERO FIBONACCI ENTRE 0 Y 1000</strong></li>");
 document.write("<p class=\"card-container--text\">",miArreglo + "</p>");
@@ -31,6 +31,7 @@ document.write("<p class=\"card-container--text\">",Impares + "</p>");
 
 
 /// ARREGLO EN MINUSCULAS ///
+document.write("<p class=\"card-container--title\"><strong>ARREGLOS</strong>")
 document.write("<li><strong>ARREGLO DE STRINGS ORIGINAL EN MINUSCULAS</strong></li>");
 let pokeones = ["Pikachu","Charmander","Bulbasaur","Squirtle",]
 document.write("<p class=\"card-container--text\">",pokeones + "</p>")

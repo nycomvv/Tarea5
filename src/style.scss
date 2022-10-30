@@ -1,5 +1,7 @@
 body {
-    background-color: #742d2d;
+    margin: 0;
+    padding: 0;
+    background-color: #a65151;
     display: grid;
     justify-items: center;
     align-items: center;
@@ -7,25 +9,32 @@ body {
 }
 
 .card-container {
-    width: 600px;
     margin: 10px;
-    padding: 30px;
+    display: grid;
+    //justify-content: center;
+    //text-align: center;
+    width: 700px;
     background-color: rgb(48, 60, 147);
     box-shadow: 7px 13px 37px rgba(0, 0, 0, .7);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
     &--title {
+        margin: 20px;
+        padding: 10px;
         display: flex;
         color: white;
+        font-size: 15px;
         justify-content: center;
+        align-items: center;
         text-decoration: underline;
         border-radius: 15%;
-        width: 600px;
-        box-shadow: 7px 13px 37px rgba(0, 0, 0, .7);
+        width: 200px;
+        box-shadow: 7px 13px 37px rgba(0, 0, 0, .3);
         background-color: rgb(111, 104, 9);
     }
+
     &--text {
         color: white;
         text-align: center;
-      
     }
 }
